@@ -2029,7 +2029,7 @@ $(document).ready(function(){
         }
         else {
           // Insert as text;
-          toast.innerHTML = html; 
+          toast.innerHTML = html;
         }
         // Bind hammer
         var hammerHandler = new Hammer(toast, {prevent_default: false});
@@ -4096,12 +4096,16 @@ $(document).ready(function(){
     });
 
     // Toggle-on-click behaviour.
-    $(document).on('click.fixedActionBtn', '.fixed-action-btn.click-to-toggle > a', function(e) {
+    $(document).on('click.fixedActionBtn', '.fixed-action-btn.click-to-toggle > a', '.fixed-action-btn.click-to-toggle', function(e) {
       var $this = $(this);
       var $menu = $this.parent();
+      var $gMenu = $menu.parent();
       if ($menu.hasClass('active')) {
+        // alert('hello')
         closeFABMenu($menu);
       } else {
+        // $this.addClass('helllooooo')
+        // $menu.addClass('hello')
         openFABMenu($menu);
       }
     });

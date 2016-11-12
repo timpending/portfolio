@@ -16,7 +16,7 @@
  }
 
  .button-collapse {
-   color: #26a69a;
+   color: rgba(34, 56, 73, 1);
  }
 
  .parallax-container {
@@ -80,6 +80,9 @@ hero {
   margin-top: 5%;
   overflow:visible;
 }
+.parallax {
+  min-height: 100%;
+}
 
 header {
   display: block;
@@ -94,4 +97,25 @@ header {
   margin-left: 1.2em;
   font-size: 0.65em;
   font-weight: 400;
+}
+
+/* Floating Action Menu */
+.fixed-action-btn {
+  position: fixed;
+  left: 23px;
+  top: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 998;
+}
+
+.fixed-action-btn ul{
+  text-align: left;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  margin-left: 10px;
+  padding-top: 76px;
+  margin-top: 0;
+  z-index: 998;
 }
