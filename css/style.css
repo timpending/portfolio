@@ -115,7 +115,11 @@ header {
   left: 20px;
   top: 20px;
   margin-left: 10px;
-  padding-top: 76px;
+  padding-top: 23px;
   margin-top: 0;
   z-index: 998;
+}
+
+.hidden {
+  display:none;
 }

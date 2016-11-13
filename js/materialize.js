@@ -4085,6 +4085,12 @@ $(document).ready(function(){
     // jQuery reverse
     $.fn.reverse = [].reverse;
 
+    // $(document).on('click.open', function(e) {
+    //   console.log('test');
+    //   $('.btn-floating.btn-large.blue-steel.open').removeClass('open');
+    //   $('.fixed-action-btn.click-to-toggle.active').removeClass('active');
+    // })
+
     // Hover behaviour: make sure this doesn't work on .click-to-toggle FABs!
     $(document).on('mouseenter.fixedActionBtn', '.fixed-action-btn:not(.click-to-toggle)', function(e) {
       var $this = $(this);
@@ -4095,22 +4101,31 @@ $(document).ready(function(){
       closeFABMenu($this);
     });
 
-    // Toggle-on-click behaviour.
-    $(document).on('click.fixedActionBtn', '.fixed-action-btn.click-to-toggle > a', '.fixed-action-btn.click-to-toggle', function(e) {
-      var $this = $(this);
-      var $menu = $this.parent();
-      var $gMenu = $menu.parent();
-      if ($menu.hasClass('active')) {
-        // alert('hello')
-        closeFABMenu($menu);
-      } else {
-        // $this.addClass('helllooooo')
-        // $menu.addClass('hello')
-        openFABMenu($menu);
-      }
-    });
+    // $('#test').on('click', function(e) {
+    //   if ($('#OK').hasClass('open') || $('#OK').hasClass('active')){
+    //       $('.fixed-action-btn').closeFAB('.fixed-action-btn.click-to-toggle');
+    //     }
+    // })
 
-  });
+    // Toggle-on-click behaviour.
+    $(document).on('click.fixedActionBtn', '.fixed-action-btn.click-to-toggle > a',
+    '.fixed-action-btn.click-to-toggle > a > i',  function(e) {
+     var $this = $(this);
+     var $menu = $this.parent();
+     if ($menu.hasClass('active')) {
+       closeFABMenu($menu);
+     } else {
+       $('#FABmenu').addClass('hidden')
+       openFABMenu($menu)
+     }
+   });
+
+   $('#closeFAB').on('click', function(e){
+    $('.fixed-action-btn').closeFAB()
+    $('#FABmenu').removeClass('hidden')
+   })
+
+ });
 
   $.fn.extend({
     openFAB: function() {
@@ -4175,6 +4190,7 @@ $(document).ready(function(){
 
 }( jQuery ));
 ;(function ($) {
+
   // Image transition function
   Materialize.fadeInImage =  function(selectorOrEl) {
     var element;
