@@ -7046,7 +7046,7 @@ input[type=range]:focus::-ms-fill-upper {
  *                                5 pointed star shape (it's 360/5 * 3).
  *                                For a 7 pointed star, we might do
  *                                360/7 * 3 = 154.286)
- *      CONTAINERWIDTH = 28px
+ *      WIDTH = 28px
  *      SHRINK_TIME = 400ms
  */
 .preloader-wrapper {
@@ -7068,8 +7068,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 .preloader-wrapper.active {
   /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
-  -webkit-animation: container-rotate 1568ms linear infinite;
-  animation: container-rotate 1568ms linear infinite;
+  -webkit-animation: -rotate 1568ms linear infinite;
+  animation: -rotate 1568ms linear infinite;
 }
 
 @-webkit-keyframes container-rotate {

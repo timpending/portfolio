@@ -63,8 +63,14 @@ html {
   line-height: 1.5;
   font-family: "Lato", "Roboto", sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(34, 56, 73, 1);
   background-color: rgba(34, 56, 73, 1) !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 94%;
 }
 
 nav {
@@ -77,8 +83,9 @@ hero {
 }
 
 .parallax-container {
-  margin-top: 5%;
-  overflow:visible;
+  overflow:hidden;
+  min-height: 100vh;
+  width: 100vw;
 }
 .parallax {
   min-height: 100%;
@@ -86,7 +93,7 @@ hero {
 
 header {
   display: block;
-  margin-top: 0.05em;
+  margin-top: 5%;
   font-size: 6em;
   font-weight: 700;
 }
@@ -102,7 +109,7 @@ header {
 /* Floating Action Menu */
 .fixed-action-btn {
   position: fixed;
-  left: 23px;
+  right: 20px;
   top: 23px;
   padding-top: 15px;
   margin-bottom: 0;
@@ -110,9 +117,9 @@ header {
 }
 
 .fixed-action-btn ul{
-  text-align: left;
+  text-align: right;
   position: fixed;
-  left: 20px;
+  right: 20px;
   top: 20px;
   margin-left: 10px;
   padding-top: 23px;
@@ -122,4 +129,19 @@ header {
 
 .hidden {
   display:none;
+}
+
+.icon {
+  font-size: 4em;
+  color: rgba(34, 56, 73, 1) !important;
+}
+.footer-icons {
+  display:flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
+.bottom-dwell {
+  padding: 0;
+  margin-bottom: 0;
 }

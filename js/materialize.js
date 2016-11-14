@@ -4120,10 +4120,17 @@ $(document).ready(function(){
      }
    });
 
+   // Customized to promatically close FAB
    $('#closeFAB').on('click', function(e){
     $('.fixed-action-btn').closeFAB()
     $('#FABmenu').removeClass('hidden')
-   })
+  });
+
+   $('.nav-btn').on('click', function(e){
+     $('.fixed-action-btn').closeFAB()
+     $('#FABmenu').removeClass('hidden')
+   });
+
 
  });
 
