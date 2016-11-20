@@ -109,6 +109,10 @@ header {
   padding-top: 0;
 }
 
+.profile {
+  margin: 2.1rem auto 1.68rem auto;
+}
+
 /* Floating Action Menu */
 .fixed-action-btn {
   position: fixed;
