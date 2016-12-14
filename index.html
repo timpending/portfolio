@@ -189,7 +189,7 @@
             <h1>Experience</h1>
             <h6>I've spent years working through operational processes with enterprise companies whether that be customer service, client management, operational anaylsis, or documentation. Select a company to see my track record of delivering results.</h6>
             <br>
-            <div class='center'><a class="center waves-effect waves-light teal btn" href="images/Tim-Pender-Full-Stack-Web-Developer-Resume.pdf" download="Tim-Pender-Full-Stack-Web-Developer-Resume">Resume PDF</a>
+            <div class='center white-text'><a class="center waves-effect waves-light my-blue my-white-text btn" href="images/Tim-Pender-Full-Stack-Web-Developer-Resume.pdf" download="Tim-Pender-Full-Stack-Web-Developer-Resume">Resume PDF</a>
             </div>
           </div>
 
@@ -228,11 +228,13 @@
             I Hope We Can Connect Soon</p>
           <div class="row center">
             <div class="footer-icons s12">
-              <a href="https://www.github.com/timpending" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/timpending" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-linkedin"></i></a>
+              <a href="mailto:timpending@gmail.com"  onmouseover="showEmailDetails();" onmouseleave="hideEmailDetails();"class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-envelope-o"></i><div id="emailDeets" class="hidden contact-details">timpending@gmail.com</div></a>
+              <a href="tel:+13039003259"  onmouseover="showPhoneDetails();" onmouseleave="hidePhoneDetails();" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-mobile"></i><div id="phoneDeets" class="hidden contact-details">303.900.3259</div></a>
+              <a href="https://www.github.com/timpending" onmouseover="showGitDetails();" onmouseleave="hideGitDetails();" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-github"></i><div id="gitDeets" class="hidden contact-details">@timpending</div></a>
+              <a href="https://www.linkedin.com/in/timpending" onmouseover="showLinkDetails();" onmouseleave="hideLinkDetails();" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-linkedin"></i><div id="linkDeets" class="hidden contact-details">@timpending</div></a>
               <!--<a href="https://www.twitter.com/timpending" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="fa fa-twitter"></i></a>-->
-              <a href="https://www.instagram.com/mrtimpender" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-instagram"></i></a>
-              <a href="https://open.spotify.com/user/12125784329" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-spotify"></i></a>
+              <!-- <a href="https://www.instagram.com/mrtimpender" class="wow rollIn icon" style="animation-delay: 0.5s"><i class="white-text fa fa-instagram"></i></a> -->
+              <a href="https://open.spotify.com/user/12125784329" onmouseover="showSpotDetails();" onmouseleave="hideSpotDetails();" class="wow rollIn icon blah" style="animation-delay: 0.5s"><i class="white-text fa fa-spotify"></i><div id="spotDeets" class="hidden contact-details">@mrtimpender</div></a>
             </div>
           </div>
           <div class="copyright text-uppercase">
@@ -382,7 +384,10 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script src="js/materialize.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/init.js"></script>
