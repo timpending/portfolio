@@ -60,8 +60,9 @@
  }
  /* End Materialize Pre-Reqs */
 
-/* Start Custom Styles */
 
+
+/* Start Custom Styles */
 html {
   line-height: 1.5;
   font-family: "Lato", "Roboto", sans-serif;
@@ -143,6 +144,8 @@ section {
   margin: 2.1rem auto 1.68rem auto;
 }
 
+
+
 /* Floating Action Menu */
 .fixed-action-btn {
   position: fixed;
@@ -184,14 +187,11 @@ section {
   color: rgba(249, 254, 255, 1);
 }
 
-/*.bottom-dwell {
-  padding: 0;
-  margin-bottom: 0;
-}*/
-
 .copyright {
   margin-top: 2rem;
 }
+
+
 
 /* Experience Section */
 expIcon img {
