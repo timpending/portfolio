@@ -56,6 +56,7 @@
 
  footer.page-footer {
    margin: 0;
+   margin-bottom: 100px;
  }
  /* End Materialize Pre-Reqs */
 
@@ -94,11 +95,12 @@ nav {
 }
 .parallax img{
   display: flex;
+  filter: brightness(90%) blur(5px);
 }
 
 .hero-wave {
-   /*filter:opacity(30%);*/
-  -webkit-filter: blur(4px);
+   filter:blur(100%);
+  -webkit-filter: blur(5px);
   -webkit-transform: translate3d(0, 0, 0);
 }
 
@@ -128,8 +130,13 @@ section {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#2e000000',GradientType=0 ); /* IE6-9 */
 }
 
+.row {
+  margin-bottom: 0;
+}
+
 #about {
   padding-top: 0;
+  min-height: 320px;
 }
 
 .profile {
@@ -169,6 +176,7 @@ section {
   display:flex;
   flex-flow: wrap;
   justify-content: space-around;
+  height: 120px;
 }
 
 .contact-details {
@@ -176,9 +184,13 @@ section {
   color: rgba(249, 254, 255, 1);
 }
 
-.bottom-dwell {
+/*.bottom-dwell {
   padding: 0;
   margin-bottom: 0;
+}*/
+
+.copyright {
+  margin-top: 2rem;
 }
 
 /* Experience Section */
